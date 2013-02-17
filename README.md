@@ -1,3 +1,9 @@
+This is a modification of 320Press's WordPress theme built off of Twitter Bootstrap.
+
+To-do's: 
+	- Make it fully compliant with new mobile theme.
+	- Fix nav bar bug in IE (doesn't fully extend to edge of page)
+
 WORDPRESS BOOTSTRAP
 ===================
 
