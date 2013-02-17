@@ -1,0 +1,1478 @@
+/*
+Theme Name: uc-bootstrap
+Theme URI: http://uconn.edu
+Description: A UConn-compliant, BuddyPress BootStrap theme based off of 320press
+Author: Dave Hicking & 320press
+Author URI: http://uconn.edu
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/*BuddyPress Custom CSS*/
+div.item-list-tabs ul li.last {
+
+margin: 2em;
+
+}
+
+header {
+min-width: 0;
+position: relative;
+}
+
+.navbar {
+overflow:visible;
+}
+
+#content-home {
+padding:0em;
+}
+
+.homepage_row_wrap {
+margin: 2em;
+}
+
+.slider {
+margin-bottom: 1em;
+}
+
+.hero-unit {
+border-radius: 0px;
+background-color: #e2e2e2;
+border: #BBBABA 1px solid;
+}
+
+.hero-unit h2 {
+font-size: 40px;
+}
+
+/*UConn Custom CSS*/
+
+button:hover,
+a.button:hover,
+a.button:focus,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+ul.button-nav li a:hover,
+ul.button-nav li.current a,
+div.generic-button a:hover,
+.comment-reply-link:hover {
+	background: #ededed;}
+
+
+body{
+	max-width:1200px;
+	min-width:480px;
+	background: #666;
+}
+
+a {
+	color: black;
+}
+
+#uc-head-wrap {
+
+height:90px;
+}
+
+label {
+	font-size: 12px;
+}
+
+.box-shadow{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+}
+
+.uconn-blue {
+background-image: url(http://web2.uconn.edu/webtools/global/4.0/head-foot/images/hd-blue.png); /* Old browsers */
+background: -moz-linear-gradient(top, #003093 0%, #00165f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003093), color-stop(100%,#00165f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #003093 0%,#00165f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #003093 0%,#00165f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #003093 0%,#00165f 100%); /* IE10+ */
+background: linear-gradient(to bottom, #003093 0%,#00165f 100%); /* W3C */
+}
+
+#uc-website-title a{
+	color:white;
+	position: relative;
+	bottom: -.1em;
+	left: .4em;
+}
+
+.navbar {
+	margin-bottom:0px;
+	border-bottom: #E2E2E2 1px solid;
+}
+
+.navbar .nav > li > a {
+	text-shadow:none;
+	font:bold 1em Helvetica, sans-serif;
+	color:black;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+color: black;
+box-shadow:none;
+}
+
+.navbar-inner {
+	border-radius: 0px;
+  padding-left: 15px;
+}
+
+#hero_image a img{
+	width:100%;
+	height:auto;
+}
+
+.hero-unit {
+padding: 30px;
+margin-bottom: 30px;
+}
+
+#blog-content {
+	background:white;
+}
+#uc-foot-wrap {
+	height:90px;
+	color:white;
+}
+
+#uc-foot-wrap hr{
+		border-top:none;
+	border-bottom:none;
+}
+
+.lead {
+	font-size:18px;
+}
+
+#uc-foot-links li {
+	float: left;
+margin-right: 40px;
+list-style: none;
+}
+
+#uc-foot-links {
+	color:white;
+}
+
+#uc-foot-links a{
+	color:white;
+}
+
+.info-button {
+	margin: .4em;
+font-size: 25px;
+padding-right: 10px;
+}
+
+.icon-footer{
+
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+background-color: #0055cc;
+}
+
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Iconic Font Set */
+
+@font-face {
+  font-family: IconicStroke;
+  font-weight: normal;
+  src: url('http://print.uconn.edu/fonts/iconic_stroke.eot');
+  src: local('IconicStroke'), url('http://print.uconn.edu/fonts/iconic_stroke.eot?#iefix') format('embedded-opentype'), url('http://print.uconn.edu/fonts/iconic_stroke.woff') format('woff'), url('http://print.uconn.edu/fonts/iconic_stroke.ttf') format('truetype'), url('http://print.uconn.edu/fonts/iconic_stroke.svg#iconic') format('svg'), url('http://print.uconn.edu/fonts/iconic_stroke.otf') format('opentype');
+}
+
+@font-face {
+  font-family: IconicFill;
+  font-weight: normal;
+  src: url('http://print.uconn.edu/fonts/iconic_fill.eot');
+  src: local('IconicFill'), url('http://print.uconn.edu/fonts/iconic_fill.eot?#iefix') format('embedded-opentype'), url('http://print.uconn.edu/fonts/iconic_fill.woff') format('woff'), url('http://print.uconn.edu/fonts/iconic_fill.ttf') format('truetype'), url('http://print.uconn.edu/fonts/iconic_fill.svg#iconic') format('svg'), url('http://print.uconn.edu/fonts/iconic_fill.otf') format('opentype');
+}
+
+@media screen, print {
+  [class*="iconic-"] {
+    font-style: inherit;
+    font-weight: normal;
+    vertical-align: bottom;
+  }
+  [class*="iconic-"]:before {
+    display: inline-block;
+    width: 1em;
+    font-family: IconicFill;
+    font-size: 0.9em;
+    text-align: center;
+    vertical-align: middle;
+    content: "";
+  }
+  .iconic-stroke:before {
+    font-family: IconicStroke;
+  }
+  .iconic-hash:before {
+    content: '\23';
+  }
+  .iconic-question-mark:before {
+    content: '\3f';
+  }
+  .iconic-at:before {
+    content: '\40';
+  }
+  .iconic-pilcrow:before {
+    content: '\b6';
+  }
+  .iconic-info:before {
+    content: '\2139';
+  }
+  .iconic-arrow-left:before {
+    content: '\2190';
+  }
+  .iconic-arrow-up:before {
+    content: '\2191';
+  }
+  .iconic-arrow-right:before {
+    content: '\2192';
+  }
+  .iconic-arrow-down:before {
+    content: '\2193';
+  }
+  .iconic-home:before {
+    content: '\2302';
+  }
+  .iconic-sun:before {
+    content: '\2600';
+  }
+  .iconic-cloud:before {
+    content: '\2601';
+  }
+  .iconic-umbrella:before {
+    content: '\2602';
+  }
+  .iconic-star:before {
+    content: '\2605';
+  }
+  .iconic-moon:before {
+    content: '\263e';
+  }
+  .iconic-heart:before {
+    content: '\2764';
+  }
+  .iconic-cog:before {
+    content: '\2699';
+  }
+  .iconic-bolt:before {
+    content: '\26a1';
+  }
+  .iconic-key:before {
+    content: '\26bf';
+  }
+  .iconic-rain:before {
+    content: '\26c6';
+  }
+  .iconic-denied:before {
+    content: '\26d4';
+  }
+  .iconic-mail:before {
+    content: '\2709';
+  }
+  .iconic-pen:before {
+    content: '\270e';
+  }
+  .iconic-x:before {
+    content: '\2717';
+  }
+  .iconic-o-x:before {
+    content: '\2718';
+  }
+  .iconic-check:before {
+    content: '\2713';
+  }
+  .iconic-o-check:before {
+    content: '\2714';
+  }
+  .iconic-left-quote:before {
+    content: '\275d';
+  }
+  .iconic-right-quote:before {
+    content: '\275e';
+  }
+  .iconic-plus:before {
+    content: '\2795';
+  }
+  .iconic-minus:before {
+    content: '\2796';
+  }
+  .iconic-curved-arrow:before {
+    content: '\2935';
+  }
+  .iconic-document-alt:before {
+    content: '\e000';
+  }
+  .iconic-calendar:before {
+    content: '\e001';
+  }
+  .iconic-map-pin-alt:before {
+    content: '\e002';
+  }
+  .iconic-comment-alt1:before {
+    content: '\e003';
+  }
+  .iconic-comment-alt2:before {
+    content: '\e004';
+  }
+  .iconic-pen-alt:before {
+    content: '\e005';
+  }
+  .iconic-pen-alt2:before {
+    content: '\e006';
+  }
+  .iconic-chat-alt:before {
+    content: '\e007';
+  }
+  .iconic-o-plus:before {
+    content: '\e008';
+  }
+  .iconic-o-minus:before {
+    content: '\e009';
+  }
+  .iconic-bars-alt:before {
+    content: '\e00a';
+  }
+  .iconic-book-alt:before {
+    content: '\e00b';
+  }
+  .iconic-aperture-alt:before {
+    content: '\e00c';
+  }
+  .iconic-beaker-alt:before {
+    content: '\e010';
+  }
+  .iconic-left-quote-alt:before {
+    content: '\e011';
+  }
+  .iconic-right-quote-alt:before {
+    content: '\e012';
+  }
+  .iconic-o-arrow-left:before {
+    content: '\e013';
+  }
+  .iconic-o-arrow-up:before {
+    content: '\e014';
+  }
+  .iconic-o-arrow-right:before {
+    content: '\e015';
+  }
+  .iconic-o-arrow-down:before {
+    content: '\e016';
+  }
+  .iconic-o-arrow-left-alt:before {
+    content: '\e017';
+  }
+  .iconic-o-arrow-up-alt:before {
+    content: '\e018';
+  }
+  .iconic-o-arrow-right-alt:before {
+    content: '\e019';
+  }
+  .iconic-o-arrow-down-alt:before {
+    content: '\e01a';
+  }
+  .iconic-brush:before {
+    content: '\e01b';
+  }
+  .iconic-brush-alt:before {
+    content: '\e01c';
+  }
+  .iconic-eyedropper:before {
+    content: '\e01e';
+  }
+  .iconic-layers:before {
+    content: '\e01f';
+  }
+  .iconic-layers-alt:before {
+    content: '\e020';
+  }
+  .iconic-compass:before {
+    content: '\e021';
+  }
+  .iconic-award:before {
+    content: '\e022';
+  }
+  .iconic-beaker:before {
+    content: '\e023';
+  }
+  .iconic-steering-wheel:before {
+    content: '\e024';
+  }
+  .iconic-eye:before {
+    content: '\e025';
+  }
+  .iconic-aperture:before {
+    content: '\e026';
+  }
+  .iconic-image:before {
+    content: '\e027';
+  }
+  .iconic-chart:before {
+    content: '\e028';
+  }
+  .iconic-chart-alt:before {
+    content: '\e029';
+  }
+  .iconic-target:before {
+    content: '\e02a';
+  }
+  .iconic-tag:before {
+    content: '\e02b';
+  }
+  .iconic-rss:before {
+    content: '\e02c';
+  }
+  .iconic-rss-alt:before {
+    content: '\e02d';
+  }
+  .iconic-share:before {
+    content: '\e02e';
+  }
+  .iconic-undo:before {
+    content: '\e02f';
+  }
+  .iconic-reload:before {
+    content: '\e030';
+  }
+  .iconic-reload-alt:before {
+    content: '\e031';
+  }
+  .iconic-loop:before {
+    content: '\e032';
+  }
+  .iconic-loop-alt:before {
+    content: '\e033';
+  }
+  .iconic-back-forth:before {
+    content: '\e034';
+  }
+  .iconic-back-forth-alt:before {
+    content: '\e035';
+  }
+  .iconic-spin:before {
+    content: '\e036';
+  }
+  .iconic-spin-alt:before {
+    content: '\e037';
+  }
+  .iconic-move-horizontal:before {
+    content: '\e038';
+  }
+  .iconic-move-horizontal-alt:before {
+    content: '\e039';
+  }
+  .iconic-o-move-horizontal:before {
+    content: '\e03a';
+  }
+  .iconic-move-vertical:before {
+    content: '\e03b';
+  }
+  .iconic-move-vertical-alt:before {
+    content: '\e03c';
+  }
+  .iconic-o-move-vertical:before {
+    content: '\e03d';
+  }
+  .iconic-move:before {
+    content: '\e03e';
+  }
+  .iconic-move-alt:before {
+    content: '\e03f';
+  }
+  .iconic-o-move:before {
+    content: '\e040';
+  }
+  .iconic-transfer:before {
+    content: '\e041';
+  }
+  .iconic-download:before {
+    content: '\e042';
+  }
+  .iconic-upload:before {
+    content: '\e043';
+  }
+  .iconic-cloud-download:before {
+    content: '\e044';
+  }
+  .iconic-cloud-upload:before {
+    content: '\e045';
+  }
+  .iconic-fork:before {
+    content: '\e046';
+  }
+  .iconic-play:before {
+    content: '\e047';
+  }
+  .iconic-o-play:before {
+    content: '\e048';
+  }
+  .iconic-pause:before {
+    content: '\e049';
+  }
+  .iconic-stop:before {
+    content: '\e04a';
+  }
+  .iconic-eject:before {
+    content: '\e04b';
+  }
+  .iconic-first:before {
+    content: '\e04c';
+  }
+  .iconic-last:before {
+    content: '\e04d';
+  }
+  .iconic-fullscreen:before {
+    content: '\e04e';
+  }
+  .iconic-fullscreen-alt:before {
+    content: '\e04f';
+  }
+  .iconic-fullscreen-exit:before {
+    content: '\e050';
+  }
+  .iconic-fullscreen-exit-alt:before {
+    content: '\e051';
+  }
+  .iconic-equalizer:before {
+    content: '\e052';
+  }
+  .iconic-article:before {
+    content: '\e053';
+  }
+  .iconic-read-more:before {
+    content: '\e054';
+  }
+  .iconic-list:before {
+    content: '\e055';
+  }
+  .iconic-list-nested:before {
+    content: '\e056';
+  }
+  .iconic-cursor:before {
+    content: '\e057';
+  }
+  .iconic-dial:before {
+    content: '\e058';
+  }
+  .iconic-new-window:before {
+    content: '\e059';
+  }
+  .iconic-trash:before {
+    content: '\e05a';
+  }
+  .iconic-battery-half:before {
+    content: '\e05b';
+  }
+  .iconic-battery-empty:before {
+    content: '\e05c';
+  }
+  .iconic-battery-charging:before {
+    content: '\e05d';
+  }
+  .iconic-chat:before {
+    content: '\e05e';
+  }
+  .iconic-mic:before {
+    content: '\e05f';
+  }
+  .iconic-movie:before {
+    content: '\e060';
+  }
+  .iconic-headphones:before {
+    content: '\e061';
+  }
+  .iconic-user:before {
+    content: '\e062';
+  }
+  .iconic-lightbulb:before {
+    content: '\e063';
+  }
+  .iconic-cd:before {
+    content: '\e064';
+  }
+  .iconic-folder:before {
+    content: '\e065';
+  }
+  .iconic-document:before {
+    content: '\e066';
+  }
+  .iconic-pin:before {
+    content: '\e067';
+  }
+  .iconic-map-pin:before {
+    content: '\e068';
+  }
+  .iconic-book:before {
+    content: '\e069';
+  }
+  .iconic-book-alt2:before {
+    content: '\e06a';
+  }
+  .iconic-box:before {
+    content: '\e06b';
+  }
+  .iconic-calendar-alt:before {
+    content: '\e06c';
+  }
+  .iconic-comment:before {
+    content: '\e06d';
+  }
+  .iconic-iphone:before {
+    content: '\e06e';
+  }
+  .iconic-bars:before {
+    content: '\e06f';
+  }
+  .iconic-camera:before {
+    content: '\e070';
+  }
+  .iconic-volume-mute:before {
+    content: '\e071';
+  }
+  .iconic-volume:before {
+    content: '\e072';
+  }
+  .iconic-battery-full:before {
+    content: '\e073';
+  }
+  .iconic-magnifying-glass:before {
+    content: '\e074';
+  }
+  .iconic-lock:before {
+    content: '\e075';
+  }
+  .iconic-unlock:before {
+    content: '\e076';
+  }
+  .iconic-link:before {
+    content: '\e077';
+  }
+  .iconic-wrench:before {
+    content: '\e078';
+  }
+  .iconic-clock:before {
+    content: '\e079';
+  }
+  .iconic-sun-stroke:before {
+    font-family: IconicStroke;
+    content: '\2600';
+  }
+  .iconic-moon-stroke:before {
+    font-family: IconicStroke;
+    content: '\263e';
+  }
+  .iconic-star-stroke:before {
+    font-family: IconicStroke;
+    content: '\2605';
+  }
+  .iconic-heart-stroke:before {
+    font-family: IconicStroke;
+    content: '\2764';
+  }
+  .iconic-key-stroke:before {
+    font-family: IconicStroke;
+    content: '\26bf';
+  }
+  .iconic-document-alt-stroke:before {
+    font-family: IconicStroke;
+    content: '\e000';
+  }
+  .iconic-comment-alt1-stroke:before {
+    font-family: IconicStroke;
+    content: '\e003';
+  }
+  .iconic-comment-alt2-stroke:before {
+    font-family: IconicStroke;
+    content: '\e004';
+  }
+  .iconic-pen-alt-stroke:before {
+    font-family: IconicStroke;
+    content: '\e005';
+  }
+  .iconic-chat-alt-stroke:before {
+    font-family: IconicStroke;
+    content: '\e007';
+  }
+  .iconic-award-stroke:before {
+    font-family: IconicStroke;
+    content: '\e022';
+  }
+  .iconic-tag-stroke:before {
+    font-family: IconicStroke;
+    content: '\e02b';
+  }
+  .iconic-trash-stroke:before {
+    font-family: IconicStroke;
+    content: '\e05a';
+  }
+  .iconic-folder-stroke:before {
+    font-family: IconicStroke;
+    content: '\e065';
+  }
+  .iconic-document-stroke:before {
+    font-family: IconicStroke;
+    content: '\e066';
+  }
+  .iconic-map-pin-stroke:before {
+    font-family: IconicStroke;
+    content: '\e068';
+  }
+  .iconic-calendar-alt-stroke:before {
+    font-family: IconicStroke;
+    content: '\e06c';
+  }
+  .iconic-comment-stroke:before {
+    font-family: IconicStroke;
+    content: '\e06d';
+  }
+  .iconic-lock-stroke:before {
+    font-family: IconicStroke;
+    content: '\e075';
+  }
+  .iconic-unlock-stroke:before {
+    font-family: IconicStroke;
+    content: '\e076';
+  }
+}
+ /*End of Iconic Font */
+
+
+@media (min-width: 980px) {
+	.navbar .brand {
+		display:none;
+	}
+	.navbar .small-logo {
+		display:none;
+	}
+
+	.navbar-inner {
+		background: #E2E2E2;
+
+	}
+
+	.container-fluid .nav-container {
+		padding:0px;
+	}
+
+	#uc-head-wrap #search {
+		float:right;
+	}
+
+
+
+	#uc-head-wrap fieldset{
+	padding:1em;
+	}
+
+	#uc-head-wrap input#q.searchBox{
+		margin-bottom:-1px;
+	}
+
+	#uc-head-wrap button#sa.btn{
+		margin-bottom: -1px;
+	}
+	#uc-head-wrap #search li{
+		float:left;
+		color:white;
+		list-style:none;
+	}
+
+	#uc-head-wrap #search ul {
+		margin-bottom:2.5em;
+	}
+	input#cx1 {
+		margin-left:-1.7em;
+		margin-top:-.1em;
+	}
+
+	input#cx3 {
+		margin-left:1em;
+		margin-top:-.1em;
+	}
+
+	#uc-head-wrap h1 {
+	margin:0;
+}
+
+	#uc-foot-links {
+		padding-left:10em;
+	}
+
+	.widget_search input {
+		width: 175px;
+	}
+}
+
+
+
+
+@media (max-width: 979px) {
+	.navbar .brand {
+		text-shadow:none;
+	}
+	.navbar-inner {
+		background: -moz-linear-gradient(top, #003093 0%, #00165f 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003093), color-stop(100%,#00165f)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #003093 0%,#00165f 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #003093 0%,#00165f 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #003093 0%,#00165f 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #003093 0%,#00165f 100%); /* W3C */
+		padding-left: .5em;
+		padding-right: .5em;
+		border: 0px;
+		min-height:45px;
+	}
+
+	.nav-collapse, .nav-collapse.collapse {
+		background-color: #E2E2E2;
+		margin-bottom: 0.5em;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+	}
+
+
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		color:black;
+
+	}
+
+	.nav-collapse .nav > li > a {
+		max-width: 30%;
+	}
+
+	.small-logo img{
+		float:left;
+	}
+
+	#small-footer {
+		height:45px;
+		color:white;
+}
+	.small-uconn img{
+		height:30px;
+		margin-top: .7em;
+		margin-left: .3em;
+}
+
+	}
+
+}
+
+}
+@media (max-width: 767px) {
+
+	body {
+		padding:0px;
+	}
+	.container-fluid {padding:1em;
+	}
+
+	#uc-foot-links li {
+		float:none;
+	}
+	#uc-foot-wrap {
+	height:150px;
+	}
+
+	div#main.span8.clearfix {
+	width:95%;
+	}
+
+}
+
+
+
+
+
+
+/* micro clearfix: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* wp-specific classes */
+.wp-caption{
+	
+}
+
+.wp-caption-text{
+	
+}
+
+.sticky{
+	
+}
+
+.gallery-caption{
+	
+}
+
+/* layout */
+
+body{
+	padding-top: 0;
+}
+
+/* Admin Top Navigation fixes */
+
+body.admin-bar .navbar-fixed-top{ 
+	top: 28px; 
+}
+
+.navbar .brand{
+	color: white;
+}
+
+.nav-container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#inner-header{
+	width: auto;
+}
+
+input, textarea, select, .uneditable-input {
+	margin-bottom: 0;
+}
+
+.navbar-form, .navbar-search {
+	margin: 0 0 9px;
+}
+
+.navbar-search{
+	padding-left: 0;
+}
+
+#s{
+	width: 100px;
+}
+
+#content{
+	padding: 1em;
+	width:90%;
+	margin-left: 1em;
+}
+
+.more-link{
+	white-space: nowrap;
+}
+
+.footer-links{
+	float: right;
+	margin-bottom: 18px;
+}
+
+.footer-links .menu{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.footer-links .menu li{
+	float: left;
+	margin-left: 10px;
+}
+
+/* post styling */
+
+#main p.meta{
+	font-style: italic;
+	color: #808080;
+}
+
+#main article{
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0 0 9px;
+}
+
+.sidebar{
+	margin-top: 18px !important;
+}
+
+#main article footer{
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+	position: relative;
+	min-height: 20px;
+}
+
+#main article footer a.edit-post{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.post:hover a.edit-post{
+	display: inline;
+}
+
+p.tags{
+	line-height: 20px;
+}
+
+div[id*='attachment_']{
+	max-width: 100%;
+	height: 100%;
+}
+
+#credit320{
+	background: url('images/320press_mini.png') no-repeat left top transparent;
+	padding-left: 20px;
+}
+
+#main .hero-unit img{
+	margin-bottom: 1em;
+}
+
+#main article img{
+	height: auto;
+	max-width: 100%;
+}
+
+img.alignleft{
+	margin-right: 10px;
+	float: left;
+}
+
+img.alignright{
+	margin-left: 10px;
+	float: right;
+}
+
+img.aligncenter{
+	display: block;
+	margin: 0 auto;
+}
+
+.post header img{
+	margin-bottom: 18px;
+}
+
+.archive #main .post h3{
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrapper {
+	width: 630px;
+	max-width: 100%;
+	margin-bottom: 18px;
+}
+
+/* page styling */
+
+#featured-carousel .item{
+	width: 970px;
+	height: 600px;
+}
+
+.carousel-caption p{
+	display: none;
+}
+
+.page-template-page-homepage-php #main article{
+	border-bottom: none;
+}
+
+.page-template-page-homepage-php .hero-unit,
+.blog .hero-unit{
+	padding: 1em;
+}
+
+.hero-unit h1 {
+	font-size: 3em;
+}
+
+/* comments */
+
+
+
+#comments{
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+
+ol.commentlist,
+ol.commentlist ul.children{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.comment .vcard div{
+	margin-top: 8px;
+	padding: 0 10px;
+}
+
+ol.commentlist time{
+	font-size: .8em;
+	color: #eeeeee;
+}
+
+ol.commentlist div.comment-author{
+	position: relative;
+}
+
+ol.commentlist a.comment-edit-link{
+	color: #ffffff;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+ol.commentlist span.edit-comment{
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+ol.commentlist li.bypostauthor{
+	background-color: #dddddd;
+}
+
+ol.commentlist ul.children li{
+	background-color: #cccccc;
+}
+
+ol.commentlist ul.children li ul.children li{
+	background-color: #bbbbbb;
+}
+
+ol.commentlist ul.children li ul.children li ul.children li{
+	background-color: #aaaaaa;
+}
+
+ol.commentlist article{
+	border-bottom: none !important;
+}
+
+a.comment-reply-link{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#comment-nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#comment-form-elements{
+	list-style-type: none;
+	margin: 0;
+}
+
+.comment .vcard .avatar{
+	padding-right: 0;
+}
+
+.comment .vcard .comment-text{
+	margin-left: 0;
+}
+
+img.avatar{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-left: 1px solid #ddd;
+	
+}
+
+ol.commentlist li{
+	padding-right: 10px;
+	background-color: #F0F0F0;
+}
+
+#pings{
+	margin-bottom: 9px;
+}
+
+ol.pinglist{
+	list-style-type: none;
+	margin: 0 0 9px 0;
+}
+
+#comment{
+	width: 270px;
+}
+
+ol.commentlist #respond{
+	padding: 5px 10px;
+}
+
+/* specific post-type styles */
+
+/* image attachment */
+
+.attachment #main .post_content img{
+	max-width: 100%;
+}
+
+.ie8 #main .media-grid img{
+	max-height: none !important;
+	max-width: none !important;
+}
+
+.attachment-img{
+	margin-bottom: 18px;
+}
+
+.metadata p.alert-message{
+	margin-right: 0;
+	margin-bottom: 18px;
+}
+
+#gallery-nav{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+li.next a, li.previous a{
+	position: relative;
+}
+
+li.next a:hover:before{
+	content: "\2190";
+	position: absolute;
+	display: block;
+	top: 42%;
+	left: 0;
+	background-color: #BFBFBF;
+	color: #444;
+	width: 20px;
+	height: 20px;
+	padding-left: 5px;
+	text-decoration: none;
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+li.previous a:hover:before{
+	content: "\2192";
+	position: absolute;
+	display: block;
+	top: 42%;
+	right: 0;
+	background-color: #BFBFBF;
+	color: #444;
+	width: 20px;
+	height: 20px;
+	padding-left: 5px;
+	text-decoration: none;
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+
+/* widget styles */
+
+.widget{
+	margin-bottom: 18px;
+}
+
+.widgettitle{
+	margin-bottom: 9px;
+}
+
+#tag-cloud{
+	margin-bottom: 18px;
+	line-height: 160%;
+}
+
+/* for some reason the bs version currently available for download doesn't have this style */
+.label{
+	text-transform: uppercase;
+}
+
+/* override standard link hover for the tag cloud widget */
+#tag-cloud a:hover,
+.tags a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#tag-cloud a{
+	white-space: pre;
+	text-transform: uppercase;
+}
+
+/* change default form padding for search */
+
+.widget_search form{
+	padding-left: 0;
+}
+
+.widget_search input{
+	width: 121px;
+}
+
+/* calendar widget */
+
+#calendar_wrap{
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+#wp-calendar{
+	width: 100%;
+	
+}
+
+#wp-calendar caption{
+	font-weight: bold;
+	padding: 8px;
+}
+
+#wp-calendar tr{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#wp-calendar tr:last-child{
+	border-bottom: none;
+}
+
+#wp-calendar td{
+	text-align: center;
+	padding: 8px 0;
+}
+
+blockquote.pull-left{
+	padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.carousel-caption p{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+body {
+margin:auto
+	}
+
+	#page{
+		margin:1em;
+	}
+	.container-fluid{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#inner-footer{
+		padding: 0;
+	}
+	
+	
+	
+	.topbar-inner{
+		padding: 0;
+	}
+	
+	.topbar form.pull-right {
+		float: right;
+	}
+	
+	.navbar-form, .navbar-search {
+		margin-top: 6px;
+		margin-bottom: 0;
+	}
+	
+	.navbar-search{
+		padding-left: 0;
+	}
+	
+	.sidebar{
+		margin-top: 0 !important;
+	}
+	
+
+	
+	.blog .hero-unit{
+		margin-top: 10px;
+	}
+	
+	.page-template-page-homepage-php .hero-unit,
+	.blog .hero-unit{
+		padding: 2em;
+	}
+	
+	.hero-unit h1 {
+		font-size: 60px;
+	}
+	
+	/* hide edit comment button and show on hover on desktop version */
+	.edit-comment{
+		display: none;
+	}
+	
+	.vcard:hover .edit-comment{
+		display: inline-block;
+	}
+	
+	#s{
+		width: 210px;
+		margin-bottom: 6px;
+	}
+	
+	
+	.comment .vcard .comment-text{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
